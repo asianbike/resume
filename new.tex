@@ -1,0 +1,218 @@
+%-------------------------
+% Resume in Latex
+% Author : Luke Son
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
+\begin{center}
+    \textbf{\Huge \scshape Luke Son} \\ \vspace{1pt}
+    \small 619-857-5513 $|$ \href{mailto:lukesson1112@gmail.com}{\underline{lukesson1112@gmail.com}} $|$ 
+    \href{https://www.linkedin.com/in/luke-son-98a425345/}{\underline{linkedin}} $|$
+    \href{https://github.com/asianbike}{\underline{github}}
+\end{center}
+
+
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University - New Brunswick}{New Brunswick, NJ}
+      {Bachelor of Science in Computer Science}{Sep. 2025 -- May 2028}
+    \resumeSubheading
+      {San Diego State University}{San Diego, CA}
+      {Exchange Student}{Jan. 2025 -- May 2025}
+    \resumeSubheading
+      {Sejong University}{Seoul, South Korea}
+      {Bachelor of Science in Computer Engineering}{Mar. 2021 -- Dec 2024}
+  \resumeSubHeadingListEnd
+
+
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Social Security Agent}{Dec. 2022 -- Sep 2024}
+      {Seoul Metropolitan Fire \& Disaster HQ}{Seoul, South Korea}
+      \resumeItemListStart
+        \resumeItem{Managed 20+ years of operational and volunteer data, improving reporting accuracy by 25\% and supporting efficient disaster response decision-making; utilized SQL for querying and organizing large datasets.}
+        \resumeItem{Assisted in oversaw 300+ computers, resolving 95\% of technical issues using diagnostic tools, ensuring a 99\% uptime for the disaster response network system.}
+        \resumeItem{Configured network equipment and secure intranet for a disaster command post during the National drill, enabling 100+ personnel to access critical systems 30\% faster through optimized VLAN setup.}
+      \resumeItemListEnd
+   
+      
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+
+     \resumeSubheading
+      {Co-Founder \& Digital Experience Lead}{Mar. 2023 -- Dec 2023}
+      {Carrierfree}{Seoul, South Korea}
+      \resumeItemListStart
+        \resumeItem{Conceptualized and developed a web platform for winter jacket rentals, utilizing AWS S3 and EC2 for scalable storage and deployment, catering to Southeast Asian tourists' need for cost-effective, hassle-free travel by using JavaScript, HTML5, CSS, JSON.}
+        \resumeItem{Led a cross-functional team of 3 developers, coordinating sprints and code reviews, resulting in the agile delivery of the platform two weeks ahead of schedule.}
+        \resumeItem{Implemented a multilingual interface with automatic language detection, enhancing user engagement and attracting 500+ unique visitors in the first two months.}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+       \resumeProjectHeading
+          {\textbf{Reddit-style Backend Clone} $|$ \emph{FastAPI, PostgreSQL, SQLAlchemy, Docker}}{June 2025 -- Present}
+          \resumeItemListStart
+            \resumeItem{Developed secure REST API for user signup, post creation, and commenting with FastAPI and SQLAlchemy}
+            \resumeItem{Designed relational models with Pydantic validation and password hashing using bcrypt  }
+            \resumeItem{Integrated PostgreSQL in Docker and structured project with routers/schemas for maintainability}
+          \resumeItemListEnd
+          
+        \resumeProjectHeading
+          {\textbf{AI Resume Analyzer} $|$ \emph{Flask, Groq API, LLaMA3, Bootstrap, Jinja2, Render}}{May 2025 -- June 2025}
+          \resumeItemListStart
+            \resumeItem{Built a web app that compares PDF resumes and job descriptions using LLaMA3 and DeepSeek via Groq API }
+            \resumeItem{Extracted and embedded text from PDFs to compute semantic similarity between resume and job posting content  }
+            \resumeItem{Designed UI with Bootstrap and deployed to Render with modular Flask/Jinja2 structure}
+          \resumeItemListEnd
+        
+        \resumeProjectHeading
+          {\textbf{Conversion Rate Analysis} $|$ \emph{Python, PyTorch, Google Analytics}}{May 2023 -- June 2023}
+          \resumeItemListStart
+            \resumeItem{Analyzed 500+ customer interactions, including user behavior and website traffic patterns, to uncover bottlenecks in the conversion funnel.}
+            \resumeItem{Designed and implemented machine learning models (Logistic Regression, Random Forest) to predict user conversion likelihood to optimize predictions and validate model performance.}
+            \resumeItem{Utilized Python, PyTorch for data preprocessing, feature engineering, and model training, ensuring scalability and reproducibility in a large-scale code project.}
+          \resumeItemListEnd
+     
+    \resumeSubHeadingListEnd
+
+
+
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, JavaScript, SQL(PostgreSQL), HTML5, CSS, JSON, C} \\
+     \textbf{Frameworks}{: FastAPI, Flask, Bootstrap, Jinja2} \\
+     \textbf{Developer Tools}{: Git, GitHub, Docker, AWS (EC2, S3), Azure, Render, Uvicorn} \\
+     \textbf{Libraries}{: SQLAlchemy, Pydantic, bcrypt, PyTorch, TensorFlow, Matplotlib, Scikit-learn}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
+\end{document}
