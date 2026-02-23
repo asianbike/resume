@@ -1,3 +1,9 @@
+%-------------------------
+% Resume in Latex
+% Author : Luke Son
+% Based off of: https://github.com/sb2nov/resume
+% License : MIT
+%------------------------
 
 \documentclass[letterpaper,11pt]{article}
 
@@ -13,77 +19,166 @@
 \usepackage[english]{babel}
 \usepackage{tabularx}
 \input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
 \pagestyle{fancy}
-\fancyhf{}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
 \renewcommand{\headrulewidth}{0pt}
 \renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
+
 \urlstyle{same}
+
 \raggedbottom
 \raggedright
 \setlength{\tabcolsep}{0in}
+
+% Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & #2 \\
+    \end{tabular*}\vspace{-6pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
+
+%-------------------------------------------
+%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
 
 \begin{document}
 
+%----------HEADING----------
+% \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+%   \textbf{\href{http://sourabhbajaj.com/}{\Large Sourabh Bajaj}} & Email : \href{mailto:sourabh@sourabhbajaj.com}{sourabh@sourabhbajaj.com}\\
+%   \href{http://sourabhbajaj.com/}{http://www.sourabhbajaj.com} & Mobile : +1-123-456-7890 \\
+% \end{tabular*}
+
 \begin{center}
     \textbf{\Huge \scshape Luke Son} \\ \vspace{1pt}
-    \small 619-857-5513 $|$ \href{mailto:lukesson1112@gmail.com}{\underline{lukesson1112@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/luke-son-98a425345/}{\underline{linkedin.com/in/luke-son}} $|$
-    \href{https://github.com/asianbike}{\underline{github.com/asianbike}}
+    \small 619-857-5513 $|$ \href{mailto:lss184@rutgers.edu}{\underline{lss184@rutgers.edu}} $|$ 
+    \href{http://www.linkedin.com/in/luke-s-son}{\underline{www.linkedin.com/in/luke-s-son}} $|$
+    \small RUID : 244008082
 \end{center}
 
+
+%-----------EDUCATION-----------
 \section{Education}
-\begin{itemize}[leftmargin=0.15in, label={}]
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{Sejong University} & Mar. 2021 -- Dec. 2024 \\
-      \textit{Bachelor of Science in Computer Engineering} & Seoul, South Korea \\
-    \end{tabular*}\vspace{-7pt}
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{San Diego State University} & Jan 2025 -- May 2025 \\
-      \textit{Exchange Student} & San Diego, CA \\
-    \end{tabular*}\vspace{-7pt}
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{Rutgers University} & Sep 2025 -- May 2028 \\
-      \textit{Bachelor of Science in Computer Science} & New Brunswick, NJ \\
-    \end{tabular*}\vspace{-7pt}
-\end{itemize}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Rutgers University - New Brunswick}{New Brunswick, NJ}
+      {Bachelor of Science in Computer Science}{Sep 2025 -- May 2028}
+    \resumeSubheading
+      {San Diego State University}{San Diego, CA}
+      {Exchange Student}{Jan 2025 -- May 2025}
+    \resumeSubheading
+      {Sejong University}{Seoul, South Korea}
+      {Bachelor of Science in Computer Engineering}{Mar 2021 -- Dec 2022}
+  \resumeSubHeadingListEnd
 
+
+%-----------EXPERIENCE-----------
 \section{Experience}
-\begin{itemize}[leftmargin=0.15in, label={}]
+  \resumeSubHeadingListStart
+     \resumeSubheading
+      {Crew}{Aug 2025 -- Current}
+      {Mexican Grill Chipotle}{New Brunswick, NJ}
+      \resumeItemListStart
+        \resumeItem{Provided \textbf{front-line customer service}, resolving requests in a fast-paced environment}
+        \resumeItem{Maintained accurate \textbf{inventory records} to ensure operational efficiency}
+      \resumeItemListEnd
 
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{IT & Data Support Associate} & Dec 2022 -- Sep 2024 \\
-      \textit{}Seoul Metropolitan Fire \& Disaster HQ & Seoul, South Korea \\
-    \end{tabular*}\vspace{-7pt}
-    \begin{itemize}
-      \item Managed 20+ years of operational and volunteer data, improving reporting accuracy by 25\% and supporting efficient disaster response decision-making; utilized \textbf{SQL} for querying and organizing large datasets.
-      \item Assisted in oversaw 300+ computers, resolving 95\% of technical issues using diagnostic tools, ensuring a 99\% uptime for the disaster response network system.
-      \item Configured network equipment and secure intranet for a disaster command post during the National drill, enabling 100+ personnel to access critical systems 30\% faster through optimized VLAN setup.
-    \end{itemize}
+       
+% -----------Multiple Positions Heading-----------
+%    \resumeSubSubheading
+%     {Software Engineer I}{Oct 2014 - Sep 2016}
+%     \resumeItemListStart
+%        \resumeItem{Apache Beam}
+%          {Apache Beam is a unified model for defining both batch and streaming data-parallel processing pipelines}
+%     \resumeItemListEnd
+%    \resumeSubHeadingListEnd
+%-------------------------------------------
+    \resumeSubheading
+      {Technical Support Associate}{Dec 2022 -- Sep 2024}
+      {Seoul Metropolitan Fire \textnormal{\&} Disaster HQ}{Seoul, South Korea}
 
-  \item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
-      \textbf{Co-Founder \& Digital Experience Lead} & Mar 2023 -- Dec 2023 \\
-      \textit{}Carrierfree & Seoul, South Korea \\
-    \end{tabular*}\vspace{-7pt}
-    \begin{itemize}
-      \item Conceptualized and developed a web platform for winter jacket rentals, utilizing \textbf{AWS S3} and \textbf{EC2} for scalable storage and deployment, catering to Southeast Asian tourists' need for cost-effective, hassle-free travel by using \textbf{JavaScript, HTML5, CSS, JSON}.
-      \item Led a cross-functional team of 3 developers, coordinating sprints and code reviews, resulting in the agile delivery of the platform two weeks ahead of schedule.
-      \item Implemented a multilingual interface with automatic language detection, enhancing user engagement and attracting 500+ unique visitors in the first two months.
-    \end{itemize}
+      \resumeItemListStart
+        \resumeItem{Repaired and maintained \textbf{300+ computers, printers, and networking equipment} to ensure operational readiness.}
+        \resumeItem{Set up and troubleshot \textbf{audio-visual and communication \& network systems}, during emergency response operations.}
+      \resumeItemListEnd
 
-\end{itemize}
+  \resumeSubHeadingListEnd
+%-----------PROJECTS-----------
 
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Operating Systems}{: Windows, macOS, Linux} \\
+     \textbf{Hardware/Networking}{: PC assembly/repair, basic networking, AV equipment setup} \\
+     \textbf{Software}{: MS Office, Zoom, Google Workspace, Cisco Webex} \\
+     \textbf{Soft Skills}{: Communication Skills, Problem-Solving \& Troubleshooting, Independence, Reliability}
+    }}
+ \end{itemize}
+
+
+%-------------------------------------------
 \end{document}

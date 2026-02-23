@@ -43,7 +43,7 @@
 \addtolength{\oddsidemargin}{-0.5in}
 \addtolength{\evensidemargin}{-0.5in}
 \addtolength{\textwidth}{1in}
-\addtolength{\topmargin}{-.5in}
+\addtolength{\topmargin}{-.6in}
 \addtolength{\textheight}{1.0in}
 
 \urlstyle{same}
@@ -54,8 +54,8 @@
 
 % Sections formatting
 \titleformat{\section}{
-  \vspace{-4pt}\scshape\raggedright\large
-}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+  \vspace{-6pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-4pt}]
 
 % Ensure that generate pdf is machine readable/ATS parsable
 \pdfgentounicode=1
@@ -73,21 +73,21 @@
     \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubSubheading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \textit{\small#1} & \textit{\small #2} \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeProjectHeading}[2]{
     \item
     \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
       \small#1 & #2 \\
-    \end{tabular*}\vspace{-7pt}
+    \end{tabular*}\vspace{-6pt}
 }
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
@@ -97,7 +97,7 @@
 \newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
-\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-6pt}}
 
 %-------------------------------------------
 %%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -112,41 +112,32 @@
 % \end{tabular*}
 
 \begin{center}
-    \textbf{\Huge \scshape Luke Son} \\ \vspace{1pt}
-    \small 619-857-5513 $|$ \href{mailto:lukesson1112@gmail.com}{\underline{lukesson1112@gmail.com}} $|$ 
-    \href{https://www.linkedin.com/in/luke-son-98a425345/}{\underline{linkedin}} $|$
-    \href{https://github.com/asianbike}{\underline{github}}
+    \textbf{\Huge \scshape Luke Son} \\ \vspace{3pt}
+    \href{mailto:lukesson1112@gmail.com}{\underline{lukesson1112@gmail.com}} $|$ \small 619-857-5513 $|$ 
+    
 \end{center}
-
-
+\vspace{-21pt}  
 %-----------EDUCATION-----------
 \section{Education}
   \resumeSubHeadingListStart
     \resumeSubheading
       {Rutgers University - New Brunswick}{New Brunswick, NJ}
-      {Bachelor of Science in Computer Science}{Sep. 2025 -- May 2028}
-    \resumeSubheading
-      {San Diego State University}{San Diego, CA}
-      {Exchange Student}{Jan. 2025 -- May 2025}
-    \resumeSubheading
-      {Sejong University}{Seoul, South Korea}
-      {Bachelor of Science in Computer Engineering}{Mar. 2021 -- Dec 2024}
+      {Bachelor of Science in Computer Science (GPA : 3.8/4.0)}{Expected graduation : May 2028}
   \resumeSubHeadingListEnd
 
-
 %-----------EXPERIENCE-----------
-\section{Experience}
+\section{Work Experience}
   \resumeSubHeadingListStart
-
     \resumeSubheading
-      {IT \textnormal{\&} Data Support Associate}{Dec. 2022 -- Sep 2024}
-      {Seoul Metropolitan Fire \textnormal{\&} Disaster HQ}{Seoul, South Korea}
-
+      {Co-Founder \& Full-Stack Data Engineer}{Mar 2023 -- Dec 2023}
+      {Carrierfree}{Seoul, South Korea}
       \resumeItemListStart
-        \resumeItem{Managed 20+ years of operational and volunteer data, improving reporting accuracy by 25\% and supporting efficient disaster response decision-making; utilized \textbf{SQL} for querying and organizing large datasets.}
-        \resumeItem{Assisted in oversaw 300+ computers, resolving 95\% of technical issues using diagnostic tools, ensuring a 99\% uptime for the disaster response network system.}
-        \resumeItem{Configured network equipment and secure intranet for a disaster command post during the National drill, enabling 100+ personnel to access critical systems 30\% faster through optimized VLAN setup.}
+        \resumeItem{Designed and built a \textbf{full-stack MVP} for a jacket rental service from the ground up, developing the user interface with \textbf{HTML5, CSS, and JavaScript}, and integrating reservation logic, real-time availability tracking, and backend data storage using \textbf{Flask, AWS EC2/S3.}} 
+        \resumeItem{Developed \textbf{RESTful APIs} and structured client-server communication, ensuring stable data transactions and future scalability.}
+        \resumeItem{Validated MVP with \textbf{500+ unique visitors} in 2 months; analyzed \textbf{user behavior data} to improve the overall user experience and reduce drop-offs.}
+        \resumeItem{Collaborated in a small agile team of 3 developers, participating in sprint planning, async coordination, and code reviews.}
       \resumeItemListEnd
+    
    
       
 % -----------Multiple Positions Heading-----------
@@ -160,12 +151,12 @@
 %-------------------------------------------
 
      \resumeSubheading
-      {Co-Founder \& Digital Experience Lead}{Mar. 2023 -- Dec 2023}
-      {Carrierfree}{Seoul, South Korea}
+      {IT \textnormal{\&} Data Support Associate}{Dec 2022 -- Sep 2024}
+      {Seoul Metropolitan Fire \textnormal{\&} Disaster HQ}{Seoul, South Korea}
+
       \resumeItemListStart
-        \resumeItem{Conceptualized and developed a web platform for winter jacket rentals, utilizing \textbf{AWS S3 and EC2} for scalable storage and deployment, catering to Southeast Asian tourists' need for cost-effective travel by using \textbf{JavaScript, HTML5, CSS, JSON.}}
-        \resumeItem{Led a cross-functional team of 3 developers, coordinating sprints and code reviews, resulting in the agile delivery of the platform two weeks ahead of schedule.}
-        \resumeItem{Implemented a multilingual interface with automatic language detection, enhancing user engagement and attracting \textbf{500+ unique visitors} in the first two months.}
+        \resumeItem{Built and maintained \textbf{SQL-based ETL pipelines} for 20+ years of operational data, enhancing data quality and enabling faster emergency response analytics.}        
+        \resumeItem{Streamlined HR data workflows for \textbf{200+ employees} using Excel automation, reducing manual processing and improving data consistency across systems.}      
       \resumeItemListEnd
 
   \resumeSubHeadingListEnd
@@ -175,27 +166,27 @@
 \section{Projects}
     \resumeSubHeadingListStart
        \resumeProjectHeading
-          {Reddit-style Backend Clone $|$ \textbf{FastAPI, PostgreSQL, SQLAlchemy, Docker}}{June 2025 -- Present}
-          \resumeItemListStart
-            \resumeItem{Developed secure REST API for user signup, post creation, and commenting with FastAPI and SQLAlchemy}
-            \resumeItem{Designed relational models with Pydantic validation and password hashing using bcrypt  }
-            \resumeItem{Integrated PostgreSQL in Docker and structured project with routers/schemas for maintainability}
+            {\href{https://github.com/asianbike/fastapi-reddit-clone}{\textbf{\underline{Reddit-style Backend Clone}}} $|$ FastAPI, PostgreSQL, SQLAlchemy, Docker, Typescript}{Jun 2025 -- Aug 2025}
+            \resumeItemListStart
+            \resumeItem{Developed backend endpoints for user signup, login, post creation, and commenting using \textbf{FastAPI} and \textbf{SQLAlchemy}.}
+            \resumeItem{Containerized the application using \textbf{Docker} and connected it with a \textbf{PostgreSQL} database to simulate a scalable production environment.}
+            \resumeItem{Designed and enforced database schema and validation logic using \textbf{Pydantic}, ensuring data integrity.}
           \resumeItemListEnd
           
         \resumeProjectHeading
-          {AI Resume Analyzer $|$ \textbf{Flask, Groq API, LLaMA3, Bootstrap, Jinja2, Render}}{May 2025 -- June 2025}
+          {\href{https://github.com/asianbike/ResumeAIAnalyzer}{\textbf{\underline{AI Resume Analyzer}}} $|$ Flask, Groq API, LLaMA3, Bootstrap, Jinja2, Render}{May 2025 -- Jun 2025}
           \resumeItemListStart
-            \resumeItem{Built a web app that compares PDF resumes and job descriptions using LLaMA3 and DeepSeek via Groq API }
-            \resumeItem{Extracted and embedded text from PDFs to compute semantic similarity between resume and job posting content  }
-            \resumeItem{Designed UI with Bootstrap and deployed to Render with modular Flask/Jinja2 structure}
+            \resumeItem{Built a \textbf{Flask-based web service} to analyze resumes and job descriptions, including PDF text extraction and transformation into structured data.}
+            \resumeItem{Implemented a semantic similarity pipeline to match resumes to job descriptions, using embeddings via \textbf{Groq API + LLaMA3}.}
+            \resumeItem{Deployed the app using \textbf{Render} with modular templates and Bootstrap-based UI for usability.}
           \resumeItemListEnd
         
         \resumeProjectHeading
-          {Conversion Rate Analysis $|$ \textbf{Python, PyTorch, Google Analytics}}{May 2023 -- June 2023}
+          {\textbf{Conversion Rate Analysis} $|$ Python, PyTorch, NumPy, MATLAB}{May 2023 -- Jun 2023}
           \resumeItemListStart
-            \resumeItem{Analyzed 500+ customer interactions, including user behavior and website traffic patterns, to uncover bottlenecks in the conversion funnel.}
-            \resumeItem{Designed and implemented machine learning models (Logistic Regression, Random Forest) to predict user conversion likelihood to optimize predictions and validate model performance.}
-            \resumeItem{Utilized Python, PyTorch for data preprocessing, feature engineering, and model training, ensuring scalability and reproducibility in a large-scale code project.}
+            \resumeItem{Analyzed \textbf{user interaction data} from Carrierfree MVP to identify bottlenecks in the conversion funnel.}
+            \resumeItem{Extracted features and trained classification models (\textbf{Logistic Regression, Random Forest}) to predict conversion probability.}
+            \resumeItem{Used \textbf{PyTorch, NumPy} for data processing and reproducible training workflows, enabling iterative product improvements.}
           \resumeItemListEnd
      
     \resumeSubHeadingListEnd
@@ -210,7 +201,8 @@
      \textbf{Languages}{: Python, JavaScript, SQL(PostgreSQL), HTML5, CSS, JSON, C} \\
      \textbf{Frameworks}{: FastAPI, Flask, Bootstrap, Jinja2} \\
      \textbf{Developer Tools}{: Git, GitHub, Docker, AWS (EC2, S3), Azure, Render, Uvicorn} \\
-     \textbf{Libraries}{: SQLAlchemy, Pydantic, bcrypt, PyTorch, TensorFlow, Matplotlib, Scikit-learn}
+     \textbf{Libraries}{: SQLAlchemy, Pydantic, bcrypt, PyTorch, TensorFlow, Matplotlib, Scikit-learn} \\
+     \textbf{Soft Skills}{: Teamwork, Strong communication, Analytical thinking, Troubleshooting}
     }}
  \end{itemize}
 
